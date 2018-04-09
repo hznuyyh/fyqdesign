@@ -36,7 +36,7 @@
       </div> 
    </div>
    <div class="device-width" style="width:100%;height:100%">
-      <iframe style="margin-top:30px;width: 100%;height:640px;" src="/web/news.php" width=”100″ height=”30″ frameborder=”no” border=”0″ marginwidth=”0″ marginheight=”0″ scrolling=”no” allowtransparency=”yes” id='news'></iframe>
+      <iframe style="margin-top:30px;width: 100%;height:640px;" src="/htdocs/news.php" width=”100″ height=”30″ frameborder=”no” border=”0″ marginwidth=”0″ marginheight=”0″ scrolling=”no” allowtransparency=”yes” id='news'></iframe>
    </div>
  </div>
 
