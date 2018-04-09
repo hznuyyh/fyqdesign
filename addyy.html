@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+      <div style="background-color:#00BBFF;height:42px;padding: 8px;"> 
+        <a href="yongyaofa.php"><img src="images/arrow.png" class="img-responsive" width="25" height="25"></a>
+        <h4 class="text-center" style="color:white;margin-top:-18px">填写方案</h4>
+      </div>
+
+    <div class="container" style="background-color:#F7F7F7">
+      <div class="content">
+          <form action="insertyy.php" method="post">
+          <ul >
+             <li style="margin-top:10px;margin-left:36px;">
+              <div class="form-group">
+                  <img src="images/fa.png" style="margin-left: -35px;">
+                  <input type="yyname" style="width:200px;margin-top: -30px;" class="form-control" id="yytime" placeholder="方案名称" name="yyname">
+            </div>
+            </li>
+            <li style="margin-top:0px;margin-left:36px;">
+              <div class="form-group">
+                   <img src="images/pused.png" style="margin-left: -35px;">
+                    <input type="yytime" style="width:200px;margin-top: -30px;" class="form-control" id="yytime" placeholder="用药时间" name="yytime">
+            </div>
+            </li>
+            <li style="margin-left:36px;">  
+              <div class="form-group">
+                   <img src="images/wj.png" style="margin-left: -35px;">
+                    <input type="yycontent" class="form-control" style="width:200px;margin-top: -30px;" id="yycontent" placeholder="自定义方案" name="yycontent">
+              </div>  
+            </li>
+            </ul>
+           <br/>
+            <div class="form-group" style="margin-left: 120px;">
+                      <button type="submit" class="btn btn-primary" style="width: 100px;">保存</button>
+            </div>
+       </form>
+     </div>
+    </div>
+    <div>
+        <h4 align="center" style="padding-top:10px;">推荐</h4>
+        <h5 style="padding:20px;">胰岛素:甘精胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迪特胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中效胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     中效人胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;短效人胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门冬胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赖脯胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  预混人胰岛素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  诺和灵30R  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 甘舒霖50R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  诺和锐50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  优泌乐50</h5>
+        <h5 style="padding:20px;">口服药:盐酸二甲双胍片(格让止）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盐酸二甲双胍片(美迪康)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盐酸二甲双胍片(迪化康迪)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盐酸二甲双胍肠溶片(君士达新)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盐酸二甲双胍片(圣妥)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盐酸二甲双胍稀释片(泰白)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盐酸二甲双胍稀释片(麦克罗辛)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  阿卡波糖片&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 阿卡波糖片(卡博平)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 米格列醇片&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格列本脲片&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  格列齐特缓释片</h5>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    </script>
+  </body>
+</html>

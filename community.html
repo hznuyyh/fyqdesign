@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+  
+ <div  id='shouye'>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="display: inline-block;width: 100%; text-align: center;text-decoration: none;color: white"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>糖友圈</a>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+ </div>
+
+  <div id="content">  
+  </div>
+ <!-- footer 底部菜单 -->
+    <footer>
+      <a href="index.php">
+        <i class="icon icon-f1"></i>
+        首页
+      </a>
+      <a href="javascript:;" class="pick">
+        <i class="icon icon-f2"></i>
+        糖友圈
+      </a>
+      <a href="user.html">
+        <i class="icon icon-f3"></i>
+        个人中心
+      </a>
+    </footer>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/navbarscroll.js"></script>
+    <script type="text/javascript">
+      $(function(){
+
+    //demo示例一到四 通过lass调取，一句可以搞定，用于页面中可能有多个导航的情况
+      $('.wrapper').navbarscroll();
+
+      });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+  </head>
+  <body style="background-image:url('images/timg.jpg');">
+    <div class="panel" style="background-image:url('images/timg.jpg');">
+    <img src="images/tb.png" class="img-responsive center-block" width="100" height="100" style="margin-top:80px;">
+    <h3 class="text-center" style="margin-top:10px;">糖护士</h3>
+    <div class="row panel-body" style="margin-top:10px;padding:100px;">
+        <form id="loginform" action="check.php" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" name="username" placeholder="用户名" required autofocus>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" name="password" placeholder="密码" required>
+            </div>
+             <a href="Registere.html"><i class="glyphicon glyphicon-user"></i>注册</a></li>
+             <a href="index.php" style="margin-left: 70px;">忘记密码？</a>
+            <button type="submit" data-loading-text="正在提交" autocomplete="off" id="validateBtn" class="btn btn-info btn-block">登陆</button>
+           
+        </form>
+    </div>
+</div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,36 @@
+<?php
+header("content-type:text/html;charset=utf-8"); 
+session_start();
+include('function.php');
+//获取表单元素
+$username=$_POST['username']; 
+$password=$_POST['password'];
+//用户名或密码不能为空，为空则返回登入页
+//去左右空格trim
+if(empty(trim($username))||empty(trim($password))){
+	page_redirect(true,"","用户名或密码不能为空");
+}
+else
+{
+	include('connect.php');
+	$sql="select * from user where username='".$username."';";
+	//执行数据库
+	$rs=$mysqli->query($sql);
+    //读取当前记录
+	$row=$rs->fetch_assoc();
+	//当前不为空，判断密码是否正确，为空则提示密码错误；
+	if($row){
+		if($row['password']==$password){
+			$_SESSION["userid"]=$row['userid'];
+			page_redirect(false,"index.php","");
+		}
+		else{
+			page_redirect(true,"login.html","密码错误");
+		}
+	  }
+	  else{
+		page_redirect(true,"login.html","用户名不存在");
+	}
+}
+$mysqli->close();
+?>
